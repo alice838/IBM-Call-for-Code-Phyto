@@ -33,13 +33,14 @@ _INSTRUCTIONS: Complete all required deliverable sections below._
 
 ### The issue we are hoping to solve
 
-REPLACE THIS SENTENCE with a short description, 2-3 sentences in length, of the specific sustainability problem your solution is meant to address.
+Over 17 million hectares of land in Indonesia is used for coal mining, contaminating adjacent land with heavy metals and thereby reducing crop yield by up to 50%. Land rehabilitation is possible by executing phytoremediation, a process which uses certain crops to extract heavy metals from the soil. However, many farmers do not understand which plants are best for their land. 
 
 ### How our technology solution can help
 
-REPLACE THIS SENTENCE with a short description of your team's solution, in about 10 words.
+Our solution designs a tailored phytoremediation plan for farmers by using geospatial and weather analytics. 
 
 ### Our idea
+![image](https://github.com/alice838/IBM-Call-for-Code-Phyto/assets/141798368/0ab9b4da-ed02-4779-94e6-c21f584e8d69)
 
 INSTRUCTIONS: Replace this paragraph with a longer description of your solution. In about 500 words, describe your solution in more detail. Include the real-world problem you identified, describe the technological solution you have created, and explain how it’s an improvement over existing solutions. You can supply additional documentation in this source code repository that you link to as well.
 
@@ -110,26 +111,6 @@ You can find a running system to test at...
 See our [description document](./docs/DESCRIPTION.md) for log in credentials.
 
 ---
-
-_INSTRUCTIONS: You can remove the below section from your specific project README._
-
-## About this template
-
-### Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-### Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-### Authors
-
-<a href="https://github.com/Call-for-Code/Project-Sample/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=Call-for-Code/Project-Sample" />
-</a>
-
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
 
 ### License
 
