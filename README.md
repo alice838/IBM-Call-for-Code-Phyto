@@ -40,8 +40,6 @@ Over 17 million hectares of land in Indonesia is used for coal mining, contamina
 Our solution designs a tailored phytoremediation plan for farmers by using geospatial and weather analytics. 
 
 ### Our idea
-![image](https://github.com/alice838/IBM-Call-for-Code-Phyto/assets/141798368/0ab9b4da-ed02-4779-94e6-c21f584e8d69)
-
 INSTRUCTIONS: Replace this paragraph with a longer description of your solution. In about 500 words, describe your solution in more detail. Include the real-world problem you identified, describe the technological solution you have created, and explain how it’s an improvement over existing solutions. You can supply additional documentation in this source code repository that you link to as well.
 
 More detail is available in our [description document](./docs/DESCRIPTION.md).
