@@ -27,8 +27,6 @@ _New to Git and GitHub? This free online course will get you up to speed quickly
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
 
-_INSTRUCTIONS: Complete all required deliverable sections below._
-
 ## Project summary
 
 ### The issue we are hoping to solve
