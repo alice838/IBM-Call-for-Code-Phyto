@@ -42,7 +42,7 @@ Our solution designs a tailored phytoremediation plan for farmers by using geosp
 ### Our idea
 The solution seeks to address the issue of heavy metal contamination in farming land adjacent to coal mining sites in Indonesia. Farmers currently experience a 50% decrease in crop yields, leading to a decrease in income of up to Rp 10,000,000 (or AUD 1000) annually. While it is possible to rehabilitate land through phytoremediation, most farmers have neither adequate understanding nor sufficient resources to execute this process. 
 
-Enter Phyto. Our app designs tailored phytoremediation plans using geospatial analytics. **EDIT!!** Unlike existing solutions which require extensive and expensive field testing, our app functions on completely remote technology. The app first detects the farmer’s location. It proceeds to use IBM Environmental Intelligence Suite to access satellite images of the location. These images are analyzed to determine contamination levels, soil conditions, moisture levels, and nearby vegetation. IBM Weather Data APIs enable analysis on weather conditions and forecasts of the location. These two data sources build an understanding of the farmer’s land and conditions. A machine learning model then processes the optimal growing conditions of seven phytoremediation plants. Finally, it selects the plant that is most suitable for the farmer based on their land conditions. **EDIT!!**
+Enter Phyto. Our app designs tailored phytoremediation plans using geospatial analytics. Unlike existing solutions which require extensive and expensive field testing, our app functions on completely remote technology. The app first detects the farmer’s location. It proceeds to use IBM Environmental Intelligence Suite to access satellite images of the location. These images are analyzed to determine contamination levels, soil conditions, moisture levels, and nearby vegetation. A Watson machine learning model then uses IBM Weather Data APIs to access these soil condition. It then selects the phytoremediation plant most suitable for the farmer based on their land conditions. 
 
 The app selects one out of seven phytoremediation plants: vetiver, sunflower, jatropha, golden shower tree, water hyacinth, mangrove, and wild sugarcane. These plants are not only potent for rehabilitating land contaminated by heavy metals, but are also raw materials for a range of commercial products such as perfumes, essential oils, cosmetics, and even biofuels. This way, farmers are able to rehabilitate their land whilst still gaining financial returns. This whole process is powered by our app features. 
 
@@ -63,24 +63,19 @@ _INSTRUCTIONS: Included here is a list of commonly used IBM AI services. Remove 
 - [Watson Text to Speech](https://cloud.ibm.com/catalog/services/text-to-speech) - WHERE AND HOW THIS IS USED IN OUR SOLUTION
 - List any additional [IBM AI services](https://cloud.ibm.com/catalog?category=ai#services) used or remove this line
 
-### Other IBM technology used
-
-INSTRUCTIONS: List any other IBM technology used in your solution and describe how each component was used. If you can provide links to/details on exactly where these were used in your code, that would help the judges review your submission.
-
 ### Solution architecture
 
 Diagram and step-by-step description of the flow of our solution:
 
-![Video transcription/translaftion app](https://developer.ibm.com/developer/tutorials/cfc-starter-kit-speech-to-text-app-example/images/cfc-covid19-remote-education-diagram-2.png)
+![Screenshot 2023-10-11 094943](https://github.com/alice838/IBM-Call-for-Code-Phyto/assets/141798368/c560fa89-0ddd-4c03-80e6-0eba441830e9)
 
-1. The user navigates to the site and uploads a video file.
-2. Watson Speech to Text processes the audio and extracts the text.
-3. Watson Translation (optionally) can translate the text to the desired language.
-4. The app stores the translated text as a document within Object Storage.
+1. The user navigates to the app and inputs their location.
+2. IBM Weather Data API is used to gather information about the soil and weather conditions of the user's location.
+3. Watson Studio deploys a machine learning model to select the most suitable phytoremediation plant for the user.
+4. The user receives a tailored phytoremediation plan. 
+
 
 ## Presentation materials
-
-_INSTRUCTIONS: The following deliverables should be officially posted to your My Team > Submissions section of the [Call for Code Global Challenge resources site](https://cfc-prod.skillsnetwork.site/), but you can also include them here for completeness. Replace the examples seen here with your own deliverable links._
 
 ### Solution demo video
 
@@ -90,9 +85,8 @@ _INSTRUCTIONS: The following deliverables should be officially posted to your My
 
 The project currently does the following things.
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Accepts the user's location using latitude and longitude
+- Processes the user's location and recommends a suitable phytoremediation plant. 
 
 In the near future, we plan to refine data sources in order to build a functional app that uses real-time, real-live data. We also plan to complete the app design, ensuring that all features work seamlessly. Following this, the app will be launched in East Kalimantan. After customer feedback is received, the app will be improved to enable a wider selection of phytoremediation plants. The improved  version will then be launched other areas of Indonesia, followed by deployment in South East Asia. 
 Concurrently, we plan to execute collaboration efforts with manufacturers, as well as mining and environmental organisations. The aim of these efforts is to establish partnerships which enable large-scale rehabilitation efforts. We aim to partner with manufacturers who are willing to purchase the harvest of phytoremediation crops from farmers, thus enhancing the commercial value of the solution. Partnerships with environmental and mining organisations seek to establish large-scale rehabilitation opportunities using our solution. This will mainly focus on the opportunity to rehabilitate abandoned mining sites which are currently non-arable. The team will then develop a technological solution which is tailored to these efforts, called Phyto Enhance. Our roadmap reflects our overarching goal of redesigning the future of land rehabilitation and empowering positive global change. 
