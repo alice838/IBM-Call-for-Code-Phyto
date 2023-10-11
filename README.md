@@ -68,7 +68,7 @@ Diagram and step-by-step description of the flow of our solution:
 ## Presentation materials
 
 ### Solution demo video
-[![Phyto Demo](https://img.youtube.com/vi/TAaIGB7fXZM/0.jpg)](https://youtu.be/TAaIGB7fXZM)
+![Screenshot 2023-10-11 185115](https://github.com/alice838/IBM-Call-for-Code-Phyto/assets/141798368/f6506414-b38f-4715-8d33-e6ce7238c95e)(https://youtu.be/TAaIGB7fXZM)
 
 ### Project development roadmap
 
