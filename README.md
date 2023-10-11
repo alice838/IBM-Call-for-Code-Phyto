@@ -1,7 +1,5 @@
 [![License](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0) [![Community](https://img.shields.io/badge/Join-Community-blue)](https://developer.ibm.com/callforcode/solutions/projects/get-started/)
 
-API Key: 9273f14c853b4634b3f14c853bd634ab
-
 # PHYTO 
 
 - [Project summary](#project-summary)
