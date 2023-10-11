@@ -68,8 +68,7 @@ Diagram and step-by-step description of the flow of our solution:
 ## Presentation materials
 
 ### Solution demo video
-
-(https://youtu.be/TAaIGB7fXZM)
+[![Phyto Demo](https://img.youtube.com/vi/TAaIGB7fXZM/0.jpg)](https://youtu.be/TAaIGB7fXZM)
 
 ### Project development roadmap
 
