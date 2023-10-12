@@ -73,8 +73,8 @@ Diagram and step-by-step description of the flow of our solution:
 
 The project currently does the following things.
 
-- Accepts the user's location using latitude and longitude
-- Processes the user's location and recommends a suitable phytoremediation plant. 
+- Accepts the user's input on temperature, total precipitation, and relative humidity. 
+- Processes the user's input and recommends a suitable phytoremediation plant. 
 
 In the near future, we plan to refine data sources in order to build a functional app that uses real-time, real-live data. We also plan to complete the app design, ensuring that all features work seamlessly. Following this, the app will be launched in East Kalimantan. After customer feedback is received, the app will be improved to enable a wider selection of phytoremediation plants. The improved  version will then be launched other areas of Indonesia, followed by deployment in South East Asia. 
 Concurrently, we plan to execute collaboration efforts with manufacturers, as well as mining and environmental organisations. The aim of these efforts is to establish partnerships which enable large-scale rehabilitation efforts. We aim to partner with manufacturers who are willing to purchase the harvest of phytoremediation crops from farmers, thus enhancing the commercial value of the solution. Partnerships with environmental and mining organisations seek to establish large-scale rehabilitation opportunities using our solution. This will mainly focus on the opportunity to rehabilitate abandoned mining sites which are currently non-arable. The team will then develop a technological solution which is tailored to these efforts, called Phyto Enhance. Our roadmap reflects our overarching goal of redesigning the future of land rehabilitation and empowering positive global change. 
@@ -88,14 +88,21 @@ See below for our proposed roadmap after the Call for Code 2023 submission.
 
 ### How to run the project
 
-INSTRUCTIONS: In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
-
-### Live demo
-
-You can find a running system to test at...
-
-See our [description document](./docs/DESCRIPTION.md) for log in credentials.
-
+1. In a browser, launch the [IBM Cloud Shell](https://cloud.ibm.com/shell)/
+2. Export the scoring endpoint by using the below code:
+   $ export SCORING_ENDPOINT='<SCORING_ENDPOINT>'
+   Use https://private.eu-de.ml.cloud.ibm.com/ml/v4/deployments/35e99639-0f5c-4c24-b32b-82a2ed387e78/predictions?version=2021-05-01 as the scoring endpoint.
+3. Run the below command to obtain a IAM token:
+   $ ibmcloud iam oauth-tokens --output JSON | jq -r .iam_token
+4. Export the IAM token by running the below code:
+   $ export IAM_TOKEN=$(ibmcloud iam oauth-tokens --output JSON | jq -r .iam_token)
+   echo $IAM_TOKEN
+5. Run the below cURL code to see prediction results. Replace the [$ARRAY_OF_VALUES_TO_BE_SCORED] with temperature, total precipitation, and relative humidity values. 
+   curl -X POST /
+   --header 'Content-Type: application/json' /
+   --header 'Accept: application/json' /
+   --header "Authorization: Bearer $IAM_TOKEN" /
+   -d '{"input_data": [{"fields": ["temperature","precip_total","rh"],"values": [[$ARRAY_OF_VALUES_TO_BE_SCORED]]}]}' "https://private.eu-de.ml.cloud.ibm.com/ml/v4/deployments/35e99639-0f5c-4c24-b32b-82a2ed387e78/predictions?version=2021-05-01"
 ---
 
 ### License
