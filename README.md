@@ -48,8 +48,8 @@ Phyto not only enables farmers to rehabilitate land, but is also easily scalable
 
 ### IBM AI service(s) used
 
-- IBM Weather Data APIs: The Weather Data APIs provide soil and weather conditions according to the user's location. 
-- IBM Watson Studio: The IBM Watson Studio enables the creation and deployment of machine learning models. It is used to build a classification prediction model. It uses the information from the Weather Data APIs to select the most suitable phytoremediation plant. 
+- IBM Weather Data APIs: The Weather Data APIs provide soil and weather conditions according to the user's location. In our solution, it provides the temperature, total precipitation, and relative humidity of the user's location. 
+- IBM Watson Studio: The IBM Watson Studio enables the creation and deployment of machine learning models. In our solution, we have used secondary datasets on the optimal growth conditions of phytoremediation plants. This dataset is fed into a IBM Watson Studio machine learning model. The best model was a decision tree classifier, which is then implemented in the solution. The model can therefore select the most suitable phytoremediation plant given the parameters of temperature, total precipitaiton, and relative humidity. To run the model, refer to "How to run the project" below. 
   
 ### Solution architecture
 
